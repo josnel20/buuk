@@ -1,0 +1,31 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+  }
+
+  body{
+    background: #FFFFFF;
+    overflow-x: hidden;
+  }
+  #container{
+    text-align: center;
+    position: relative;
+  }
+
+  
+
+/* menu para táblet com polegada de 999px */
+
+@media (max-width: 1095px) {
+
+}
+
+/* menu para celular com polegada de 450px */
+
+@media (max-width: 450px) {
+
+}
+

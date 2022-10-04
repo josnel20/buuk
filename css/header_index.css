@@ -1,0 +1,490 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+  }
+
+  body{
+
+    background: #FFFFFF;
+
+    overflow-x: hidden;
+
+  }
+ 
+
+  a {
+    color: #101010;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  a:hover {
+    opacity: 0.7;
+  }
+
+  
+
+  .logo {
+
+    font-size: 24px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+
+  }
+
+  
+
+  .header {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+
+    background: #FFFFFF;
+
+    height: 10vh;
+
+    box-shadow: 1px 5px 5px #b9b9b9;
+
+    width: 100%;
+
+  }
+
+  
+
+  main {
+    background-size: cover;
+    height: 92vh;
+  }
+
+  
+
+  .nav-list {
+
+    list-style: none;
+
+    display: flex;
+
+  }
+
+  
+
+  .nav-list li {
+
+    letter-spacing: 3px;
+
+    margin-left: 32px;
+
+    font: 14px 'Ubuntu', verdana, arial, tahoma, sans-serif
+
+  }
+
+  .nav-list .sair{
+
+    margin-left: 100px;
+
+    color: #bf3636;
+
+    font: 12px 'Ubuntu', verdana, arial, tahoma, sans-serif
+
+    
+
+  }
+
+  
+
+  .mobile-menu {
+
+    display: none;
+
+    cursor: pointer;
+
+  }
+
+  
+
+  .mobile-menu div {
+
+    width: 32px;
+
+    height: 2px;
+
+    background: #101010;
+
+    margin: 8px;
+
+    transition: 0.3s;
+
+  }
+
+  .nav-list .contato{
+
+    display: none;
+
+  }
+
+  #container{
+
+    text-align: center;
+
+  }
+  .center{
+    background-color: rgb(215 217 219);
+    position: absolute;
+    margin-top: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 50px;
+    border-radius: 15px;
+    color: #fff;
+  }
+
+.center input[type="text"]{
+  padding: 0 10px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+  width: 230px;
+  height: 6vh;
+  border: none;
+}
+.center input[type="password"]{
+  padding: 0 10px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+  width: 230px;
+  height: 6vh;
+  border: none;
+}
+
+.center input[type="submit"]{
+    width: 100%;
+    max-width: 305px;
+    height: 55px;
+    background-color: #d60037;
+    display: block;
+    margin: 0 auto;
+    font-family: Ubuntu,arial,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.center .esqueci_senha{
+    font-family: inherit;
+    color: #777;
+    will-change: transition;
+    transition: all .2s ease;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* menu para táblet com polegada de 999px */
+
+  @media (max-width: 999px) {
+
+    body {
+
+      overflow-x: hidden;
+
+    }
+    .nav-list {
+      z-index: 2;
+
+      position: absolute;
+
+      top: 10vh;
+
+      right: 0;
+
+      width: 50vw;
+
+      height: 92vh;
+
+      background: #23232e;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      transform: translateX(100%);
+
+      transition: transform 0.3s ease-in;
+
+    }
+
+    .nav-list li {
+
+      margin-left: 0;
+
+      opacity: 0;
+
+      margin-top: 50px;
+
+    }
+
+    .nav-list li a{
+
+        color:#ffffff;
+
+    }
+
+    .nav-list .contato{
+
+        margin-top: 20px;
+
+        margin-left: 30px;
+
+        font-size: 90%;
+
+        display: block;
+
+    }
+
+
+
+    .nav-list .contato label{
+
+        color: #b9b9b9; 
+
+    }
+
+    .nav-list .contato hr {
+
+        height: 1px;
+
+        background-color: #707070;
+
+        border: none;
+
+    }
+
+    .nav-list .contato h4 {
+
+        color:#25c956;
+
+    }
+    
+
+    .nav-list .sair{
+
+        margin-top: 20%;
+
+    }
+
+    .nav-list .sair a{
+
+        color:#d60037;
+
+    }
+
+    .mobile-menu {
+
+      display: block;
+
+    }
+
+    
+
+  }
+
+
+
+  /* menu para celular com polegada de 450px */
+
+  @media (max-width: 450px) {
+
+    body {
+
+      overflow-x: hidden;
+
+    }
+
+    .logo {
+
+        font-size: 15px;
+
+        text-transform: uppercase;
+
+        letter-spacing: 4px;
+
+      }
+
+
+
+
+
+    .nav-list {
+
+      position: absolute;
+
+      top: 8vh;
+
+      right: 0;
+
+      width: 50vw;
+
+      height: 92vh;
+
+      background: #23232e;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      transform: translateX(100%);
+
+      transition: transform 0.3s ease-in;
+
+    }
+
+    .nav-list li {
+
+      margin-left: 0;
+
+      opacity: 0;
+
+      margin-top: 50px;
+
+    }
+
+    .nav-list li a{
+
+        color:#ffffff;
+
+    }
+
+    .nav-list .contato{
+
+        margin-top: 20px;
+
+        margin-left: 30px;
+
+        font-size: 75%;
+
+        display: block;
+
+    }
+
+    .nav-list .contato label{
+
+        color: #b9b9b9; 
+
+    }
+
+    .nav-list .contato hr {
+
+        height: 1px;
+
+        background-color: #707070;
+
+        border: none;
+
+    }
+
+    .nav-list .contato h4 {
+
+        color:#25c956;
+
+    }
+
+    .nav-list .sair{
+
+        margin-top: 20%;
+
+    }
+
+    .nav-list .sair a{
+
+        color:#bf3636;
+
+    }
+
+    .mobile-menu {
+
+      display: block;
+
+    }
+
+    
+
+  }
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+  .nav-list.active {
+
+    transform: translateX(0);
+
+  }
+
+  
+
+  @keyframes navLinkFade {
+
+    from {
+
+      opacity: 0;
+
+      transform: translateX(50px);
+
+    }
+
+    to {
+
+      opacity: 1;
+
+      transform: translateX(0);
+
+    }
+
+  }
+
+  
+
+  .mobile-menu.active .line1 {
+
+    transform: rotate(-45deg) translate(-8px, 8px);
+
+  }
+
+  
+
+  .mobile-menu.active .line2 {
+
+    opacity: 0;
+
+  }
+
+  
+
+  .mobile-menu.active .line3 {
+
+    transform: rotate(45deg) translate(-5px, -7px);
+
+  }
